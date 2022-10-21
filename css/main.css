@@ -34,7 +34,7 @@ header .logo{
     display: none;
 }
 header .sub-menu{
-
+    display: flex;
 }
 header .sub-menu ul.menu{
     display: flex;
@@ -67,8 +67,35 @@ header .sub-menu ul.menu li a:hover{
     color: #000;
 }
 header .sub-menu .search{
+    position: relative;
+    height: 34px;
 }
 header .sub-menu .search input{
+    width: 36px;
+    height: 34px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;/* 클릭시 표시되는 파란테두리 */
+    background-color: #fff;
+    color: #777;
+    font-size: 12px;
+    transition: width .4s;
+}
+header .sub-menu .search input:focus{
+    width: 190px;
+    border-color: #669900;
 }
 header .sub-menu .search .material-icons{
+    position: absolute;
+    height: 24px;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+    transition: .4s;
+}
+header .sub-menu .search.focused .material-icons{
+    opacity: 0;
 }
