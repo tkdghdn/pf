@@ -68,6 +68,33 @@ a{
     color: #333;
     background-color: #fff;
 }
+.back-to-position{
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position.to-right{
+    transform: translateX(-150px);
+}
+.back-to-position.to-left{
+    transform: translateX(150px);
+}
+.show .back-to-position{
+    opacity: 1;
+    transform: translateX(0);
+}
+.show .back-to-position.delay-0{
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1{
+    transition-delay: .3s;
+}
+.show .back-to-position.delay-2{
+    transition-delay: .6s;
+}
+.show .back-to-position.delay-3{
+    transition-delay: .9s;
+}
+
 
 /* HEADER */
 header{
@@ -234,6 +261,7 @@ header .badges .badge{
     cursor: pointer;
 }
 
+
 /* VISUAL */
 .visual{
     margin-top: 120px;
@@ -281,6 +309,7 @@ header .badges .badge{
 .visual .fade-in{
     opacity: 0;
 }
+
 
 /* NOTICE */
 .notice .notice-line{
@@ -365,6 +394,7 @@ header .badges .badge{
     font-size: 30px;
 }
 
+
 /* PROMOTION */
 .notice .promotion{
     position: relative;
@@ -448,6 +478,7 @@ header .badges .badge{
     color: #fff;
 }
 
+
 /* REWARDS */
 .rewards{
     position: relative;
@@ -490,6 +521,7 @@ header .badges .badge{
     margin-top: 10px;
     flex-grow: 1;
 }
+
 
 /* YOUTUBE VIDEO */
 .youtube{
@@ -542,6 +574,7 @@ header .badges .badge{
     top: 350px;
     left: 150px;
 }
+
 
 /* SEASON PRODUCT */
 .season-product{
